@@ -1,0 +1,39 @@
+<div class="container">
+  <div class="row mt-5">
+    <div class="col-md-10 mx-auto">
+      <h2 class="text-center mb-5">Markdown Editor</h2>
+      <div class="card mb-3">
+        <div class="card-body p-0">
+         <div class="d-flex flex-row">
+          <div class="align-self-stretch w-50 right-border">
+             <textarea class="form-control border-0" id="" rows="10" placeholder="Type something" ccMarkDown [value]="defaultText" (valueChange)="onValueChange($event)"></textarea>
+          </div>
+          <div class="align-self-stretch w-50 p-1" [innerHTML]="markToHtml">
+           
+          </div>
+         </div>
+        </div>
+        <div class="card-footer bg-transparent p-0">
+          <div class="d-flex flex-row">
+          <div class="align-self-stretch w-50 right-border">
+            <div class="btn-group btn-group-toggle border border-secondary rounded m-2" data-toggle="buttons">
+            <label class="btn btn-light pl-4 pr-4 active">
+              <input type="radio" name="options" id="option1" autocomplete="off" value="BOLD" checked (change)="changeContent('BOLD')"> <i class="fa fa-bold" aria-hidden="true"></i>
+            </label>
+            <label class="btn btn-light pl-4 pr-4">
+              <input type="radio" name="options" id="option2" autocomplete="off"  value="ITALIC" (change)="changeContent('ITALIC')"> <i class="fa fa-italic" aria-hidden="true"></i>
+            </label>
+            <label class="btn btn-light pl-4 pr-4">
+              <input type="radio" name="options" id="option3" autocomplete="off"  value="URL" (change)="changeContent('URL')"> <i class="fa fa-link" aria-hidden="true"></i>
+            </label>
+          </div>
+          </div>
+          <div class="align-self-stretch w-50 text-muted pt-3 pl-3"><h5>Preview</h5></div>
+         </div>
+          
+        </div>
+      </div>
+      <p class="text-muted text-center">Created By: Kishore</p>
+    </div>
+  </div>
+</div>

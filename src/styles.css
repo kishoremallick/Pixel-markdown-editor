@@ -1,0 +1,25 @@
+/* You can add global styles to this file, and also import other style files */
+ textarea{
+    font-family: 'Consolas';
+    overflow: auto;
+    outline: none;
+    resize: none;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+ }
+textarea:hover, 
+textarea:active, 
+textarea:focus{
+    outline:0px !important;
+    -webkit-appearance:none;
+    box-shadow: none;
+}
+ .right-border{
+    border-right: 2px dashed #8c8b8b;
+ }
+.form-control:focus {
+     outline:0px !important;
+    -webkit-appearance:none;
+    box-shadow: none;
+}
